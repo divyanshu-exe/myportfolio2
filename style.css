@@ -115,7 +115,7 @@
 
     }
      .rightsection a:hover{
-      color: green;
+      color:skyblue;
     }
 
     #font {
@@ -312,6 +312,7 @@
        #cvButton:hover{
         background:white;
         color: black;
+        cursor: pointer;
        }
 
     /* ===============================
@@ -397,7 +398,7 @@
 scale: 1;
   }
   
-  .resume:hover {
+  .resume:hover{
    scale:1;
 
   }
@@ -419,4 +420,127 @@ scale: 1;
   .f2 {
     margin-top: 3rem;
   }
+}
+
+
+
+
+/* About Section */
+.about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.about-container {
+    max-width: 800px;
+    text-align: center;
+    
+}
+.imagediv img{
+    width: 200px ;
+    height: 200px;
+    object-fit:fill;
+    border-radius: 50%;
+}
+
+/* Title */
+.about-title {
+    font-size: 42px;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+/* Text */
+.about-text {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #cbd5f5;
+}
+
+.about-text span {
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+/* Buttons */
+.about-actions {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn.primary {
+    background: #38bdf8;
+    color: #020617;
+}
+
+.btn.primary:hover {
+    background: #0ea5e9;
+}
+
+.btn.secondary {
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.btn.secondary:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .about-title {
+        font-size: 32px;
+    }
+
+    .about-text {
+        font-size: 15px;
+    }
+
+    .about-actions {
+        flex-direction: column;
+    }
+}
+/* #profileImage{
+    width:15%;
+ 
+} */
+/* Mobile */
+@media (max-width: 600px) {
+    .about {
+        padding: 60px 15px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .about-text {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .about-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
 }
